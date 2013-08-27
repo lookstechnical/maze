@@ -8,9 +8,14 @@ set :deploy_via, :remote_cache
 set :keep_releases,  3
 set :symlink_extras,["/app",'/var','/media','/lib','/skin','/shell','/js']
 
+
 after "deploy", "update_localxml"
 
+
 task :update_localxml, :roles => :app do
+	sudo "mv #{release_path}/app/etc/local.xml #{release_path}/app/etc/local.xml.local "
+	sudo "mv #{release_path}/app/etc/local.xml.dev #{release_path}/app/etc/local.xml "
+
 	sudo "chmod 777 -R #{release_path}/app/etc"
 	sudo "chmod 777 -R #{release_path}/media"
 	sudo "chmod 777 -R #{release_path}/var"
