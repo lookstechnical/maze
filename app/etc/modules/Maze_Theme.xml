@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Maze_Theme>
+            <active>true</active>
+            <codePool>core</codePool>
+			<depends>
+        		<Mage_Page />
+			</depends>
+		 </Maze_Theme>
+    </modules>
+</config>

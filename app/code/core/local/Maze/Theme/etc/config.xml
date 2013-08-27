@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Maze_Theme>
+      <version>0.1.0</version>
+    </Maze_Theme>
+  </modules>
+  <global>
+    <page>
+      <layouts>
+        <hold translate="label">
+          <label>Hold_page</label>
+          <template>page/hold.phtml</template>
+          <layout_handle>hold_page</layout_handle>
+        </hold>
+        <!-- add more layouts here -->
+      </layouts>
+    </page>
+  </global>
+</config>
