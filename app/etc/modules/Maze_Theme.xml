@@ -4,7 +4,7 @@
     <modules>
         <Maze_Theme>
             <active>true</active>
-            <codePool>core</codePool>
+            <codePool>local</codePool>
 			<depends>
         		<Mage_Page />
 			</depends>
